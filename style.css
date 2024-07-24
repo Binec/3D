@@ -69,8 +69,8 @@ header{
   width: 0%;
   background-color: #fff;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 100px;
+  left: 200px;
   animation: progress 1s linear;
 }
 @keyframes progress {
@@ -81,8 +81,7 @@ header{
 }
 
 .cube-wrap {
-  --size: 30vmin;
-  position: fixed;
+  --size: 5vmin;
   top: 50%;
   left: 50%;
   width: 0;
@@ -144,7 +143,7 @@ header{
   animation-fill-mode: both;
 }
 #user{
-  display: flex;
+  
   justify-content: space-around;
 }
 #pic{
