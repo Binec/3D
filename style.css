@@ -6,6 +6,7 @@ body{
   background-color: black;
   font-family: sans-serif;
   color: white;
+  height: 8000px;
 }
 a{
   color: white;
@@ -17,6 +18,7 @@ header{
   align-items: center;
   height: 120px;
   justify-content: space-between;
+  z-index: 1;
 }
 .option{
   margin: 0 25px 0 25px;
@@ -65,8 +67,6 @@ header{
 }
 
 .cube {
-  height: 3px;
-  width: 0%;
   background-color: #fff;
   position: fixed;
   top: 100px;
