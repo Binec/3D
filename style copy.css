@@ -19,8 +19,11 @@ button{
   width: 150px;
   align-items: center;
   color: white;
-  background-color: black;
+  background-color: transparent;
   border: 1px solid white;
+}
+button:hover{
+  background-color: blue;
 }
 header{
   align-items: center;
@@ -126,6 +129,27 @@ input{
   border: 1px solid white;
   height: 35px;
   padding-left: 10px;
+  background-color:transparent;
+  color: white;
+}
+input:focus{
+  border: 3px solid  red ;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
+#enviar:hover{
+  background-color: blue;
+}
+::placeholder{
+  color: white;
+}
+#message{
+  height: 150px;
+  padding-top: 5px;
 }
 #enviar{
 
@@ -151,4 +175,117 @@ footer{
   position: absolute;
   bottom: 0;
   right:0;
+}
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  cursor: pointer;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.navigation-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+
+/* Popup Styles */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.popup.active {
+  display: flex;
+}
+
+.popup-content {
+  position: relative;
+  width: 90%;
+  max-width: 800px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.popup-content img {
+  width: 100%;
+}
+
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.popup-navigation {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.popup-navigation button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px;
 }
