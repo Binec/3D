@@ -62,21 +62,9 @@ li{
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
-  padding: 25px;
+  padding: 25px 10px 25px 25px;
   max-height: 780px;
   max-width: 720px;
-  overflow: scroll;
-  position: relative;
-  
-}
-#col-left::-webkit-scrollbar-track {
-  width: 20px;     /* Tamaño del scroll en vertical */
-  height: auto;    /* Tamaño del scroll en horizontal */
-  display: none;  
-  background: yellowgreen;
-}
-#col-left::-webkit-scrollbar-thumb{
-  background-color: blueviolet;
 }
 #col-right{
   background: rgba(255, 255, 255, 0.2);
@@ -87,9 +75,7 @@ li{
   padding: 25px;
   max-height: 780px;
   max-width: 720px;
-  position: relative;
 }
-
 #top-right{
   text-align: right;
 }
@@ -108,20 +94,33 @@ li{
   margin-top: 25px;
 }
 #user{
-  position: fixed;
-  z-index: 100;
+  margin-bottom: 15px;
+}
+#l-content{
+  max-height: 76%;
+  overflow-x: scroll;
+}
+#l-content::-webkit-scrollbar{
+  margin-left: 10px;
+  background-color: transparent;
+}
+#l-content::-webkit-scrollbar-thumb{
+  background-color: #F2BD47;
+  border-radius: 20px;
+  padding-left: 15px;
+  padding-top: 50px;
 }
 #presentacion{
-  margin-top: 200px;
+  
 }
-.m{
+.m-l{
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
   padding: 25px;
-  margin-top: 25px;
+  margin-right: 10px;
 }
 input{
   margin-top: 14px;
@@ -178,14 +177,6 @@ footer{
 }
 
 
-
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
 
 .slider {
   position: relative;
