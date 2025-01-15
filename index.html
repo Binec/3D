@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Diseñador UX</title>
   <link rel="stylesheet" href="style copy.css">
-  <script src="main.js"></script>
+  <script src=""></script>
 </head>
 <body>
   <div id="m-container">
@@ -46,10 +46,13 @@
             <div id="u-bottom" class="d-flex-r">
               <div id="bottom-left">
                 <div id="location" class="d-flex-r">
-                  <img src="assets/Vector-1.svg" alt="">
+                  <img src="assets/fluent_my-location-16-regular.svg" alt="">
                   <p>CDMX, Miguel Hidalgo</p>
                 </div>
-                <p>Monterrey, Mex</p>
+                <div id="location" class="d-flex-r">
+                  <img src="assets/fluent_my-location-16-regular.svg" alt="">
+                  <p>Monterrey, Mex</p>
+                </div>
               </div>
               <div id="bottom-right" >
                 <button>Contáctame</button>
@@ -124,9 +127,10 @@
       </div>
       <div id="col-right">
         <div style="width: 90%;" id="galeria">
+          
           <div class="slider">
             <div class="slides">
-              <div class="slide" data-index="0"><img src="assets/Sin título-1 2.png" alt="Slide 1"></div>
+              <div class="slide" data-index="0"><img src="https://via.placeholder.com/800x400?text=Slide+1" alt="Slide 1"></div>
               <div class="slide" data-index="1"><img src="https://via.placeholder.com/800x400?text=Slide+2" alt="Slide 2"></div>
               <div class="slide" data-index="2"><img src="https://via.placeholder.com/800x400?text=Slide+3" alt="Slide 3"></div>
               <div class="slide" data-index="3"><img src="https://via.placeholder.com/800x400?text=Slide+4" alt="Slide 4"></div>
@@ -142,7 +146,7 @@
               <span class="dot" data-index="5"></span>
             </div>
           </div>
-
+        
           <div class="popup">
             <div class="popup-content">
               <button class="popup-close">&times;</button>
@@ -153,6 +157,7 @@
               <img src="" alt="Popup Slide">
             </div>
           </div>
+
         </div>
         <form class="d-flex-c" action="">
           <h2>Contáctame</h2>
@@ -187,10 +192,9 @@
     </div>
   </footer>
   <img id="binec" src="assets/Sin título-1 1.png" alt="">
-</body>
-<script>
+  <script>
 
-const slides = document.querySelectorAll('.slide');
+    const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
     const popup = document.querySelector('.popup');
     const popupImage = popup.querySelector('img');
@@ -226,6 +230,13 @@ const slides = document.querySelectorAll('.slide');
       popupImage.src = slides[currentSlide].querySelector('img').src;
     }
 
+    // Close popup if clicked outside the popup content
+    popup.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        closePopup();
+      }
+    });
+
     // Event listeners
     slides.forEach((slide, index) => {
       slide.addEventListener('click', () => showPopup(index));
@@ -241,6 +252,7 @@ const slides = document.querySelectorAll('.slide');
 
     // Initialize
     setActiveSlide(0);
+    </script>
+</body>
 
-</script>
 </html>
