@@ -51,6 +51,7 @@ nav{
 }
 h2{
   color: brown;
+  font-size: 14pt;
 }
 li{
   margin-top: 8px;
@@ -63,7 +64,7 @@ li{
   -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
   padding: 25px 10px 25px 25px;
-  max-height: 780px;
+  max-height: 750px;
   max-width: 720px;
 }
 #col-right{
@@ -73,9 +74,17 @@ li{
   -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
   padding: 25px;
-  max-height: 780px;
+  max-height: 750px;
   max-width: 720px;
   margin-left: 15px;
+  width: 100%;
+}
+#u-top{
+  justify-content: space-between;
+}
+.contact{
+  text-align: right;
+  justify-content: right;
 }
 #top-right{
   text-align: right;
@@ -111,9 +120,6 @@ li{
   padding-left: 15px;
   padding-top: 50px;
 }
-#presentacion{
-  
-}
 .m-l{
   background: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -144,15 +150,15 @@ input[type=number] { -moz-appearance:textfield; }
 #enviar:hover{
   background-color: blue;
 }
-::placeholder{
+input::placeholder{
   color: white;
+}
+input::placeholder:hover{
+  color: red;
 }
 #message{
   height: 150px;
   padding-top: 5px;
-}
-#enviar{
-
 }
 footer{
   display: flex;
