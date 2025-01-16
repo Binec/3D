@@ -126,8 +126,7 @@
         </div>
       </div>
       <div id="col-right">
-        <div style="width: 90%;" id="galeria">
-          
+        <div style="width: 90%;" id="">
           <div class="slider">
             <h2>Diseño UX</h2>
             <div class="slides">
@@ -147,10 +146,12 @@
               <span class="dot" data-index="5"></span>
             </div>
           </div>
-        
           <div class="popup">
             <div class="popup-content">
               <button class="popup-close">&times;</button>
+              <div class="popup-title">
+                <h2>Título del slide</h2>
+              </div>
               <div class="popup-body">
                 <div class="popup-image">
                   <img src="" alt="Popup Slide">
@@ -160,12 +161,11 @@
                 </div>
               </div>
               <div class="popup-navigation">
-                <button class="prev" style="text-align: left;">&#10094;</button>
-                <button class="next" style="text-align: right;">&#10095;</button>
+                <button class="prev arrows" style="text-align: left;">&#10094;</button>
+                <button class="next arrows" style="text-align: right;">&#10095;</button>
               </div>
             </div>
           </div>
-
         </div>
         <form id="contactForm" class="d-flex-c module" method="post" action="">
           <h2>Contáctame</h2>
@@ -208,23 +208,33 @@
   </footer>
   <img id="binec" src="assets/Sin título-1 1.png" alt="">
   <script>
-const slides = document.querySelectorAll('.slide');
+    const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
     const popup = document.querySelector('.popup');
     const popupImage = popup.querySelector('.popup-image img');
     const popupText = popup.querySelector('.popup-text p');
+    const popupTitle = popup.querySelector('.popup-title h2');
     const popupClose = document.querySelector('.popup-close');
     const prevButton = document.querySelector('.prev');
     const nextButton = document.querySelector('.next');
     let currentSlide = 0;
 
     const descriptions = [
-      "Web app Visa Open Bank \ Plataforma digital que ofrece asistencia médica, psicológica, veterinaria, entre otros, por mediode videollamada y teléfono, para los usuarios que han contratado un servicio de aseguradora con el banco.",
+      "Slide 1: Bienvenidos a nuestra galería.",
       "Slide 2: Este es un texto personalizado para el segundo slide.",
       "Slide 3: Descubre lo mejor aquí.",
       "Slide 4: Innovación en cada detalle.",
       "Slide 5: Diseñado para inspirarte.",
       "Slide 6: Gracias por acompañarnos.",
+    ];
+
+    const titles = [
+      "Web app Visa Open Bank Argentina - Banco",
+      "Título del Slide 2",
+      "Título del Slide 3",
+      "Título del Slide 4",
+      "Título del Slide 5",
+      "Título del Slide 6",
     ];
 
     function setActiveSlide(index) {
@@ -236,6 +246,7 @@ const slides = document.querySelectorAll('.slide');
 
     function showPopup(index) {
       popup.classList.add('active');
+      popupTitle.textContent = titles[index];
       popupImage.src = slides[index].querySelector('img').src;
       popupText.textContent = descriptions[index];
       currentSlide = index;
@@ -247,16 +258,26 @@ const slides = document.querySelectorAll('.slide');
 
     function navigatePopup(direction) {
       currentSlide = (currentSlide + direction + slides.length) % slides.length;
-      showPopup(currentSlide);
+      popupTitle.textContent = titles[currentSlide];
+      popupImage.src = slides[currentSlide].querySelector('img').src;
+      popupText.textContent = descriptions[currentSlide];
     }
 
-    slides.forEach((slide, index) => slide.addEventListener('click', () => showPopup(index)));
-    dots.forEach(dot => dot.addEventListener('click', () => setActiveSlide(dot.dataset.index)));
+    slides.forEach((slide, index) => {
+      slide.addEventListener('click', () => showPopup(index));
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => setActiveSlide(index));
+    });
+
     popupClose.addEventListener('click', closePopup);
     prevButton.addEventListener('click', () => navigatePopup(-1));
     nextButton.addEventListener('click', () => navigatePopup(1));
 
+    // Initialize
     setActiveSlide(0);
+
     const scriptURL = 'https://script.google.com/macros/s/AKfycbwuKTRFrRl_xFVCyVWzPo2ZedntOpPNWGphblCJ-FMRKI25Kt2DmiR3UZwBuIpdl3bY/exec'; // URL del script de Google Apps Script
     const form = document.getElementById('contactForm');
 
