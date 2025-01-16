@@ -13,6 +13,9 @@ a{
 a:hover{
   color: brown;
 }
+p{
+  line-height: 1.25;
+}
 button{
   border-radius: 6px;
   height: 35px;
@@ -234,7 +237,7 @@ footer{
 .navigation-dots {
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .dot {
   height: 15px;
@@ -253,8 +256,8 @@ footer{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 72%;
+  width: 93%;
+  height: 68%;
   display: none;
   justify-content: center;
   align-items: center;
@@ -264,7 +267,7 @@ footer{
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border-radius: 10px;
-
+  margin: 25px;
 }
 .popup.active {
   display: flex;
@@ -311,6 +314,10 @@ footer{
   display: flex;
   flex-direction: row;
   gap: 20px;
+  width: 88%;
+  justify-content: center;
+  text-align: center;
+  margin-left: 5%;
 }
 .popup-title {
   text-align: center;
@@ -335,13 +342,14 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
 }
 .popup-text p {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
+  text-align: left;
 }
 .arrows:hover{
   color: red;
