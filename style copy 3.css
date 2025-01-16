@@ -82,6 +82,7 @@ li{
   max-width: 50%;
   margin-left: 15px;
   width: 100%;
+  text-align: center;
 }
 #u-top{
   justify-content: space-between;
@@ -209,64 +210,121 @@ footer{
 #galeria{
   margin: 0 auto;
 }
-.tabs-container {
-  width: 90%;
-  margin: 20px auto;
-}
 .tabs {
   display: flex;
-  cursor: pointer;
-  margin-bottom: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 .tab {
-  flex: 1;
-  text-align: center;
   padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ffffff;
   background: transparent;
-  border: 1px solid #ccc;
+  width: 100%;
   border-radius: 10px;
-  margin: 0 10px 0 0;
-}
-.tab:hover{
-  background-color: #ff00008d;
+  margin: 0 10px 0 10px;
 }
 .tab.active {
-  background: #ff0000;
-  border-bottom: none;
-  color: white;
+  background: red;
+  font-weight: bold;
 }
-.content-t {
-  border: 1px solid #ccc;
+.tab:hover{
+  background-color: rgb(127, 0, 0);
+}
+.tab-content {
+  display: none;
   padding: 20px;
-  background: #fff;
+  background: #ffffff49;
+  border-radius: 10px;
 }
+.tab-content.active {
+  display: block;
+}
+
 .slider {
+  position: relative;
+  overflow: hidden;
+}
+.slides {
   display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
+  transition: transform 0.5s ease-in-out;
 }
 .slide {
-  flex: 0 0 100%;
+  min-width: 100%;
   box-sizing: border-box;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.slide-title {
-  font-size: 20px;
-  margin-bottom: 10px;
+.slide h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 .slide-content {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
+}
+.slide-content .image {
+  width: 50%;
 }
 .slide-content img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 .slide-content .text {
-  flex: 1;
-  margin-left: 20px;
-  text-align: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dot.active {
+  background: #333;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup.active {
+  display: flex;
+}
+.popup-content {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  background: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
 }
