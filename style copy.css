@@ -108,13 +108,14 @@ li{
   min-width: 100px;
   max-height: 150px;
   min-height: 100px;
+  margin-right: 10px;
 }
 #user{
   margin-top: 20px;
   margin-bottom: 15px;
 }
 #l-content{
-  max-height: 76%;
+  max-height: 78%;
   overflow-x: scroll;
 }
 #l-content::-webkit-scrollbar{
@@ -139,14 +140,19 @@ box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.25);
   padding: 25px;
   margin-right: 10px;
 }
+#form-inputs{
+  height: 100%;
+}
+
 input{
-  margin-top: 14px;
+  margin-top: 12px;
   border-radius: 6px;
   border: 1px solid white;
   height: 35px;
   padding-left: 10px;
   background-color:transparent;
   color: white;
+  width:90%;
 }
 input:focus{
   border: 3px solid  red ;
@@ -157,18 +163,20 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
     }
 input[type=number] { -moz-appearance:textfield; }
-#enviar:hover{
-  background-color: blue;
-}
+
 input::placeholder{
   color: white;
 }
 input::placeholder:hover{
   color: red;
 }
-#message{
-  height: 150px;
-  padding-top: 5px;
+#enviar{ 
+  width: 20%;
+  height: 85px;
+  padding-left: 0;
+}
+#enviar:hover{
+  background-color: blue;
 }
 footer{
   display: flex;
@@ -205,13 +213,11 @@ footer{
   overflow: hidden;
   text-align: center;
 }
-
 .slides {
   margin-top: 20px;
   display: flex;
   transition: transform 0.5s ease-in-out;
 }
-
 .slide {
   min-width: 100%;
   cursor: pointer;
@@ -219,20 +225,17 @@ footer{
   max-width: 50%;
   width: 200px;
 }
-
 .slide img {
   width: 100%;
   display: block;
   max-width: 350px;
   margin: 0 auto;
 }
-
 .navigation-dots {
   display: flex;
   justify-content: center;
   margin-top: 15px;
 }
-
 .dot {
   height: 15px;
   width: 15px;
@@ -242,11 +245,9 @@ footer{
   display: inline-block;
   cursor: pointer;
 }
-
 .dot.active {
   background-color: #717171;
 }
-
 /* Popup Styles */
 .popup {
   position: fixed;
@@ -263,13 +264,10 @@ footer{
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-
 }
-
 .popup.active {
   display: flex;
 }
-
 .popup-content {
   position: relative;
   width: 90%;
@@ -280,16 +278,14 @@ footer{
   overflow: hidden;
   background: rgba(0, 0, 0, 0.31);
   height: 90%;
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(50px);
--webkit-backdrop-filter: blur(50px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);  
 }
-
 .popup-content img {
   width: 100%;
 }
-
 .popup-close {
   position: absolute;
   top: 10px;
@@ -299,7 +295,6 @@ backdrop-filter: blur(50px);
   background: none;
   border: none;
 }
-
 .popup-navigation {
   display: flex;
   justify-content: space-between;
@@ -308,7 +303,6 @@ backdrop-filter: blur(50px);
   width: 95%;
   transform: translateY(-50%);
 }
-
 .popup-navigation button {
   background: none;
   border: none;
@@ -321,30 +315,27 @@ backdrop-filter: blur(50px);
   display: flex;
   flex-direction: row;
   gap: 20px;
+  margin-top: 10%;
 }
-
 .popup-image {
   flex: 1;
 }
-
 .popup-image img {
   width: 100%;
   display: block;
   border-radius: 10px;
 }
-
 .popup-text {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background: #f9f9f9;
   border-radius: 10px;
 }
-
 .popup-text p {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
 }
+

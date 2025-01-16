@@ -160,23 +160,28 @@
                 </div>
               </div>
               <div class="popup-navigation">
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
+                <button class="prev" style="text-align: left;">&#10094;</button>
+                <button class="next" style="text-align: right;">&#10095;</button>
               </div>
             </div>
           </div>
 
         </div>
-        <form class="d-flex-c" action="">
+        <form id="contactForm" class="d-flex-c module" method="post" action="">
           <h2>Contáctame</h2>
-          <h3>Trabajemos juntos</h3>
-          <form id="contactForm" method="post" action="">
-            <input type="text" name="name" requiered placeholder="Nombre">
-            <input type="mail" name="email" requiered placeholder="Correo">
-            <input type="number" name="phone" requiered placeholder="Celular">
-            <input id="message" type="text" name="message" requiered placeholder="Mensaje">
+          <p>Trabajemos juntos</p>
+        
+          <div id="form-inputs" class="d-flex-r">
+            <div>
+              <input type="text" name="name" requiered placeholder="Nombre">
+              <input type="mail" name="email" requiered placeholder="Correo">
+            </div>
+            <div>
+              <input type="number" name="phone" requiered placeholder="Celular">
+              <input id="message" type="text" name="message" requiered placeholder="Mensaje">
+            </div>
             <input id="enviar" type="submit" value="ENVIAR">
-          </form>
+          </div>
         </form>
       </div>
     </div>
@@ -214,7 +219,7 @@ const slides = document.querySelectorAll('.slide');
     let currentSlide = 0;
 
     const descriptions = [
-      "Slide 1: Bienvenidos a nuestra galería.",
+      "Web app Visa Open Bank \ Plataforma digital que ofrece asistencia médica, psicológica, veterinaria, entre otros, por mediode videollamada y teléfono, para los usuarios que han contratado un servicio de aseguradora con el banco.",
       "Slide 2: Este es un texto personalizado para el segundo slide.",
       "Slide 3: Descubre lo mejor aquí.",
       "Slide 4: Innovación en cada detalle.",
