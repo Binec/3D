@@ -4,17 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>David Diseñador UX</title>
-  <link rel="stylesheet" href="style copy 3.css">
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
+  <link rel="stylesheet" href="style copy.css">
+  <script src=""></script>
 </head>
 <body>
   <div id="m-container">
@@ -135,98 +126,47 @@
         </div>
       </div>
       <div id="col-right">
-        <div class="tabs">
-          <div class="tab" onclick="showTab(0)"><h3>Diseño UX</h3></div>
-          <div class="tab" onclick="showTab(1)">3D</div>
-          <div class="tab" onclick="showTab(2)">Binec</div>
-      </div>
-      
-      <div class="content">
+        <div style="width: 90%;" id="">
           <div class="slider">
-              <div class="slide">
-                  <div class="slide-title">Slide 1</div>
-                  <div class="slide-content">
-                      <img src="assets/visaopenbank.png" alt="Image 1">
-                      <div class="text">Plataforma digital de asitencia de videollamada y telefónica de servicios médico, psiclógico, educación, entre otros. El usuario ingresa con su contraseña a la plataforma y puede hacer uso y comprar más tipos de asistencias</div>
-                  </div>
-              </div>
-              <div class="slide">
-                  <div class="slide-title">Slide 2</div>
-                  <div class="slide-content">
-                      <img src="https://via.placeholder.com/100" alt="Image 2">
-                      <div class="text">Consectetur adipiscing elit.</div>
-                  </div>
-              </div>
-              <div class="slide">
-                  <div class="slide-title">Slide 3</div>
-                  <div class="slide-content">
-                      <img src="https://via.placeholder.com/100" alt="Image 3">
-                      <div class="text">Integer nec odio. Praesent libero.</div>
-                  </div>
-              </div>
-              <div class="slide">
-                  <div class="slide-title">Slide 4</div>
-                  <div class="slide-content">
-                      <img src="https://via.placeholder.com/100" alt="Image 4">
-                      <div class="text">Sed cursus ante dapibus diam.</div>
-                  </div>
-              </div>
-              <div class="slide">
-                  <div class="slide-title">Slide 5</div>
-                  <div class="slide-content">
-                      <img src="https://via.placeholder.com/100" alt="Image 5">
-                      <div class="text">Sed nisi. Nulla quis sem at nibh elementum.</div>
-                  </div>
-              </div>
-              <div class="slide">
-                  <div class="slide-title">Slide 6</div>
-                  <div class="slide-content">
-                      <img src="https://via.placeholder.com/100" alt="Image 6">
-                      <div class="text">Duis sagittis ipsum. Praesent mauris.</div>
-                  </div>
-              </div>
-              <div class="dots"></div>
+            <h2>Diseño UX</h2>
+            <div class="slides">
+              <div class="slide" data-index="0"><h3>Web app - Visa Open Bank Argentina</h3><img src="assets/visaopenbank.png" alt="Slide 1"></div>
+              <div class="slide" data-index="1"><h3>Web app y aplicación nativa - Gou</h3><img src="assets/ggou.png" alt="Slide 2"></div>
+              <div class="slide" data-index="2"><h3>Sitio web - Compartamos banco</h3><img src="assets/compartamos.png" alt="Slide 3"></div>
+              <div class="slide" data-index="3"><h3>Aplicación nativa - Fintech Ion</h3><img src="assets/ion.png" alt="Slide 4"></div>
+              <div class="slide" data-index="4"><h3>Web Realidad Virtual - Gentera</h3><img src="assets/vr.png" alt="Slide 5"></div>
+              <div class="slide" data-index="5"><h3>Web Realidad Aumentada - Binec</h3><img src="assets/ar.png" alt="Slide 6"></div>
+            </div>
+            <div class="navigation-dots">
+              <span class="dot" data-index="0"></span>
+              <span class="dot" data-index="1"></span>
+              <span class="dot" data-index="2"></span>
+              <span class="dot" data-index="3"></span>
+              <span class="dot" data-index="4"></span>
+              <span class="dot" data-index="5"></span>
+            </div>
           </div>
-      </div>
-      
-      <div class="content">
-          <div class="slider">
-            <div class="slide">
-              <div class="slide-title">Slide 1</div>
-              <div class="slide-content">
-                  <img src="https://via.placeholder.com/100" alt="Image 1">
-                  <div class="text">Lorem ipsum dolor sit amet.</div>
+          <div class="popup">
+            <div class="popup-content">
+              <button class="popup-close">&times;</button>
+              <div class="popup-title">
+                <h2>Título del slide</h2>
               </div>
-          </div>
-          <div class="slide">
-              <div class="slide-title">Slide 2</div>
-              <div class="slide-content">
-                  <img src="https://via.placeholder.com/100" alt="Image 2">
-                  <div class="text">Consectetur adipiscing elit.</div>
+              <div class="popup-body">
+                <div class="popup-image">
+                  <img src="" alt="Popup Slide">
+                </div>
+                <div class="popup-text">
+                  <p>Descripción del slide seleccionado.</p>
+                </div>
               </div>
-          </div>
-          </div>
-      </div>
-      
-      <div class="content">
-          <div class="slider">
-            <div class="slide">
-              <div class="slide-title">Slide 1</div>
-              <div class="slide-content">
-                  <img src="https://via.placeholder.com/100" alt="Image 1">
-                  <div class="text">Lorem ipsum dolor sit amet.</div>
+              <div class="popup-navigation">
+                <button class="prev arrows" style="text-align: left;">&#10094;</button>
+                <button class="next arrows" style="text-align: right;">&#10095;</button>
               </div>
+            </div>
           </div>
-          <div class="slide">
-              <div class="slide-title">Slide 2</div>
-              <div class="slide-content">
-                  <img src="https://via.placeholder.com/100" alt="Image 2">
-                  <div class="text">Consectetur adipiscing elit.</div>
-              </div>
-          </div>
-          </div>
-      </div>
-      
+        </div>
         <form id="contactForm" class="d-flex-c module" method="post" action="">
           <h2>Contáctame</h2>
           <p>Trabajemos juntos</p>
@@ -268,70 +208,87 @@
   </footer>
   <img id="binec" src="assets/Sin título-1 1.png" alt="">
   <script>
-    function showTab(index) {
-            const tabs = document.querySelectorAll('.tab');
-            const contents = document.querySelectorAll('.content');
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.dot');
+    const popup = document.querySelector('.popup');
+    const popupImage = popup.querySelector('.popup-image img');
+    const popupText = popup.querySelector('.popup-text p');
+    const popupTitle = popup.querySelector('.popup-title h2');
+    const popupClose = document.querySelector('.popup-close');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentSlide = 0;
 
-            tabs.forEach((tab, i) => {
-                tab.classList.toggle('active', i === index);
-                contents[i].style.display = i === index ? 'block' : 'none';
-            });
-        }
+    const descriptions = [
+      "Plataforma digital de asitencia de videollamada y telefónica de servicios médico, psiclógico, educación, entre otros. El usuario ingresa con su contraseña a la plataforma y puede hacer uso y comprar más tipos de asistencias",
+      "Slide 2: Este es un texto personalizado para el segundo slide.",
+      "Slide 3: Descubre lo mejor aquí.",
+      "Slide 4: Innovación en cada detalle.",
+      "Slide 5: Diseñado para inspirarte.",
+      "Slide 6: Gracias por acompañarnos.",
+    ];
 
-        document.addEventListener('DOMContentLoaded', () => {
-            showTab(0);
-        });
-        document.addEventListener('DOMContentLoaded', () => {
-    // Tab functionality
-    const tabButtons = document.querySelectorAll('.tab-button');
-    const tabContents = document.querySelectorAll('.tab-content');
-    
-    tabButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            tabButtons.forEach(btn => btn.classList.remove('active'));
-            tabContents.forEach(content => content.classList.remove('active'));
-            
-            button.classList.add('active');
-            document.getElementById(button.dataset.tab).classList.add('active');
-        });
+    const titles = [
+      "Web app Visa Open Bank Argentina - Banco",
+      "Título del Slide 2",
+      "Título del Slide 3",
+      "Título del Slide 4",
+      "Título del Slide 5",
+      "Título del Slide 6",
+    ];
+
+    function setActiveSlide(index) {
+      document.querySelector('.slides').style.transform = `translateX(${-index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+      currentSlide = index;
+    }
+
+    function showPopup(index) {
+      popup.classList.add('active');
+      popupTitle.textContent = titles[index];
+      popupImage.src = slides[index].querySelector('img').src;
+      popupText.textContent = descriptions[index];
+      currentSlide = index;
+    }
+
+    function closePopup() {
+      popup.classList.remove('active');
+    }
+
+    function navigatePopup(direction) {
+      currentSlide = (currentSlide + direction + slides.length) % slides.length;
+      popupTitle.textContent = titles[currentSlide];
+      popupImage.src = slides[currentSlide].querySelector('img').src;
+      popupText.textContent = descriptions[currentSlide];
+    }
+
+    slides.forEach((slide, index) => {
+      slide.addEventListener('click', () => showPopup(index));
     });
 
-    // Slider functionality
-    const sliders = document.querySelectorAll('.slider');
-    
-    sliders.forEach(slider => {
-        const slides = slider.querySelector('.slides');
-        const dotsContainer = slider.querySelector('.dots');
-        const slidesCount = slides.children.length;
-        let currentIndex = 0;
-        
-        // Create dots
-        for (let i = 0; i < slidesCount; i++) {
-            const dot = document.createElement('div');
-            dot.classList.add('dot');
-            if (i === 0) dot.classList.add('active');
-            dot.dataset.index = i;
-            dotsContainer.appendChild(dot);
-        }
-        
-        const dots = dotsContainer.querySelectorAll('.dot');
-        
-        // Update slider position and active dot
-        const updateSlider = index => {
-            slides.style.transform = `translateX(-${index * 100}%)`;
-            dots.forEach(dot => dot.classList.remove('active'));
-            dots[index].classList.add('active');
-        };
-        
-        // Dot click event
-        dots.forEach(dot => {
-            dot.addEventListener('click', () => {
-                currentIndex = parseInt(dot.dataset.index);
-                updateSlider(currentIndex);
-            });
-        });
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => setActiveSlide(index));
     });
-});
+
+    popupClose.addEventListener('click', closePopup);
+    prevButton.addEventListener('click', () => navigatePopup(-1));
+    nextButton.addEventListener('click', () => navigatePopup(1));
+
+    // Initialize
+    setActiveSlide(0);
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwuKTRFrRl_xFVCyVWzPo2ZedntOpPNWGphblCJ-FMRKI25Kt2DmiR3UZwBuIpdl3bY/exec'; // URL del script de Google Apps Script
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then((response) => alert('Formulario enviado exitosamente.'))
+        .catch((error) => alert('Error al enviar el formulario. Intenta de nuevo.'));
+    });
     </script>
 </body>
 
