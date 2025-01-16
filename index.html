@@ -22,7 +22,7 @@
     <div id="content" class="d-flex-r">
       <div id="col-left">
         <div id="user" class="d-flex-r">
-          <img src="assets/photo.png" alt="">
+          <img id="photo" src="assets/photo.png" alt="">
           <div id="user-info" class="d-flex-c">
             <div id="u-top" class="d-flex-r">
               <div id="top-left">
@@ -163,11 +163,13 @@
         <form class="d-flex-c" action="">
           <h2>Contáctame</h2>
           <h3>Trabajemos juntos</h3>
-          <input type="text" name="nombre" placeholder="Nombre">
-          <input type="mail" name="correo" placeholder="Correo">
-          <input type="number" name="celular" placeholder="Celular">
-          <input id="message" type="text" name="mensaje" placeholder="Mensaje">
-          <input id="enviar" type="submit" value="ENVIAR">
+          <form id="contactForm" method="post" action="">
+            <input type="text" name="name" requiered placeholder="Nombre">
+            <input type="mail" name="email" requiered placeholder="Correo">
+            <input type="number" name="phone" requiered placeholder="Celular">
+            <input id="message" type="text" name="message" requiered placeholder="Mensaje">
+            <input id="enviar" type="submit" value="ENVIAR">
+          </form>
         </form>
       </div>
     </div>
@@ -218,6 +220,7 @@
       popup.classList.add('active');
       popupImage.src = slides[index].querySelector('img').src;
       currentSlide = index;
+      
     }
 
     // Close popup
@@ -253,6 +256,18 @@
 
     // Initialize
     setActiveSlide(0);
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxzVisYVI2fm_rD-4-lhKjWHWwqA06Tcit2sdDKd8ToKXu0i-AFMM1mUg69L-YsYRkX/exec'; // URL del script de Google Apps Script
+    const form = document.getElementById('contactForm');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      fetch(scriptURL, { method: 'POST', body: formData })
+        .then((response) => alert('Formulario enviado exitosamente.'))
+        .catch((error) => alert('Error al enviar el formulario. Intenta de nuevo.'));
+    });
     </script>
 </body>
 

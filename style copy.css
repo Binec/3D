@@ -102,6 +102,12 @@ li{
   padding: 25px;
   margin-top: 25px;
 }
+#photo{
+  max-width: 150px;
+  min-width: 100px;
+  max-height: 150px;
+  min-height: 100px;
+}
 #user{
   margin-top: 20px;
   margin-bottom: 15px;
@@ -181,7 +187,7 @@ footer{
   justify-content: space-between;
 }
 #binec{
-  position: absolute;
+  position: fixed;
   bottom: 0;
   right:0;
 }
@@ -262,12 +268,13 @@ footer{
 .popup-content {
   position: relative;
   width: 90%;
-  max-width: 800px;
+  max-width: 90%;
   background: black;
   padding: 20px;
   border-radius: 10px;
   overflow: hidden;
   background: rgba(0, 0, 0, 0.31);
+  height: 90%;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(50px);
