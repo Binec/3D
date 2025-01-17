@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style copy 3.css">
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+  <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
   
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
@@ -138,7 +138,7 @@
         <h2 style="margin-bottom: 25px;">Algunos trabajos</h2>
         <div class="tabs">
           <div class="tab active" data-tab="tab1">Diseño UX</div>
-          <div class="tab" data-tab="tab2">3D</div>
+          <div class="tab" data-tab="tab2">3D RA RV</div>
           <div class="tab" data-tab="tab3">Diseño</div>
         </div>
       
@@ -146,31 +146,40 @@
           <div class="slider">
             <div class="slides">
               <div class="slide">
-                <h2>Slide 1</h2>
+                <h2>Web app - Visa Open Bank</h2>
                 <div class="slide-content">
-                  <div class="image"><img src="assets/visaopenbank.png" alt="Image 1"></div>
+                  <div class="image"><img id="image" src="assets/visaopenbank.png" alt="Image 1"></div>
                   <div class="text">Plataforma digital de asitencia de videollamada y telefónica de servicios médico, psiclógico, educación, entre otros. El usuario ingresa con su contraseña a la plataforma y puede hacer uso y comprar más tipos de asistencias</div>
                 </div>
               </div>
               <div class="slide">
-                <h2>Slide 2</h2>
+                <h2>Web app / Native app - AI27</h2>
                 <div class="slide-content">
-                  <div class="image"><img src="https://via.placeholder.com/150" alt="Image 2"></div>
-                  <div class="text">This is the description for Slide 2.</div>
+                  <div class="image"><img id="image" src="assets/ai27.png" alt="Image 3"></div>
+                  <div class="text">Este proyecto se comenzó desde cero escuchando las necesidades del cliente y de los usuarios se diseñó una web app que implementaba una inteligencia artificial y predecia el riesgo de las rutas de sus clientes. Armabas embarques y los podías monitorear en tiempo real. También se diseñó una aplicación nativa como botón de pánico para los conductores. Se diseñaron también varias plataformas internas como dashboard y buscadores.</div>
                 </div>
               </div>
               <div class="slide">
-                <h2>Slide 3</h2>
+                <h2>Sitio web / Native app - Compartamos Banco</h2>
                 <div class="slide-content">
-                  <div class="image"><img src="https://via.placeholder.com/150" alt="Image 3"></div>
-                  <div class="text">This is the description for Slide 3.</div>
+                  <div class="image"><img id="image" src="assets/compartamos.png" alt="Image 2"></div>
+                  <div class="text">A cmpartamos banco se le diseñó varios sitios web para mostrar sus productos de telefonía y una aplicación nativa para controlar la asistencia a un evento interno. Con este cliente trabaje muchas campañas digitales, creando landing pages y contenido digital, desde estáticos hasta animaciones.</div>
                 </div>
               </div>
+              <div class="slide">
+                <h2>ION - Native app</h2>
+                <div class="slide-content">
+                  <div class="image"><img id="image" src="assets/ion.png" alt="Image 3"></div>
+                  <div class="text">ION fue un ciente que sus usuarios requerían una manera rápida y accesible para pagar su hipoteca. Llegué a la conclución de diseñar una aplicación nativa para que estuviera domiciliado el pago de su hipoteca y puderia tener una visualización más sencilla de sus estdo de cuenta.</div>
+                </div>
+              </div>
+              
             </div>
             <div class="dots">
               <div class="dot active" data-slide="0"></div>
               <div class="dot" data-slide="1"></div>
               <div class="dot" data-slide="2"></div>
+              <div class="dot" data-slide="3"></div>
             </div>
           </div>
         </div>
@@ -179,9 +188,18 @@
           <div class="slider">
             <div class="slides">
               <div class="slide">
-                <h2>Slide A</h2>
+                <h2>Modelado Binec</h2>
                 <div class="slide-content">
-                  <div class="image"><img src="https://via.placeholder.com/150" alt="Image A"></div>
+                  
+                  <a-scene>
+                    <a-assets>
+                      <a-asset-item id="tree" src="assets/binec-time2.gltf"></a-asset-item>
+                    </a-assets>
+                  
+                    <a-entity scale="0.5 1 2" gltf-model="#tree"></a-entity>
+                  </a-scene>
+
+                <!--<div class="image"><img src="https://via.placeholder.com/150" alt="Image A"></div>-->
                   <div class="text">This is the description for Slide A.</div>
                 </div>
               </div>
@@ -233,7 +251,7 @@
                 </div>
               </div>
             </div>
-            <div class="dots">
+            <div class="dots popslider">
               <div class="dot active" data-slide="0"></div>
               <div class="dot" data-slide="1"></div>
               <div class="dot" data-slide="2"></div>
@@ -265,14 +283,14 @@
 
   <div class="popup" id="popup">
     <div class="popup-content">
-      <button class="popup-close">Close</button>
+      <button class="popup-close">&times;</button>
       <div class="slider" style="margin-top: 50px;">
         <div class="slides">
           <div class="slide">
-            <h2>Slide 1</h2>
+            <h2>Web app - Visa Open Bank</h2>
             <div class="slide-content">
-              <div class="image"><img src="https://via.placeholder.com/150" alt="Image 1"></div>
-              <div class="text">This is the description for Slide 1.</div>
+              <div class="image"><img src="assets/visaopenbank.png" alt="Image 1"></div>
+              <div class="text">Plataforma digital de asitencia de videollamada y telefónica de servicios médico, psiclógico, educación, entre otros. El usuario ingresa con su contraseña a la plataforma y puede hacer uso y comprar más tipos de asistencias.</div>
             </div>
           </div>
           <div class="slide">
@@ -419,6 +437,8 @@
   popupClose.addEventListener('click', () => {
     popup.classList.remove('active');
   });
+
+
 
     
     </script>
