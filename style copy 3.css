@@ -79,7 +79,8 @@ li{
   border-radius: 10px;
   padding: 25px;
   max-height: 750px;
-  max-width: 50%;
+  max-width: 45%;
+  min-width: 45%;
   margin-left: 15px;
   text-align: center;
 }
@@ -112,6 +113,10 @@ li{
 #user{
   margin-top: 20px;
   margin-bottom: 15px;
+  justify-content: space-between;
+}
+#user-info{
+  width: 75%;
 }
 #l-content{
   max-height: 78%;
@@ -139,6 +144,9 @@ li{
   border-radius: 10px;
   padding: 25px;
   margin-right: 10px;
+}
+form{
+  text-align: left;
 }
 #form-inputs{
   height: 100%;
@@ -200,8 +208,11 @@ footer{
   bottom: 0;
   right:0;
 }
-#f-icon:hover svg{
-  fill: red;
+#f-icon{
+  margin-left: 20px;
+}
+path:hover{
+  fill: blue;
 }
 #galeria{
   margin: 0 auto;
@@ -233,6 +244,7 @@ footer{
   padding: 20px;
   background: #ffffff49;
   border-radius: 10px;
+  max-height: 500px;
 }
 .tab-content.active {
   display: block;
@@ -244,6 +256,7 @@ footer{
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
+
 }
 .slide {
   min-width: 100%;
@@ -260,6 +273,7 @@ footer{
 .slide-content {
   display: flex;
   width: 100%;
+
 }
 .slide-content .image {
   width: 50%;
@@ -277,6 +291,9 @@ footer{
 }
 .text{
   line-height: 1.2;
+}
+#image{
+  width: 80%;
 }
 #image:hover{
   size: 110%;
@@ -340,7 +357,10 @@ footer{
 #popslider{
   margin-top: -250px;
 }
-
+#gltf-container{
+  max-width: 250px;
+  max-height: 250px;
+}
 
 @media screen and (max-width: 1440px) {
   #photo{
