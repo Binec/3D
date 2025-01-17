@@ -419,9 +419,34 @@ path:hover{
 @media screen and (max-width: 375px){
   #binec{
     width: 25vw;
-    bottom: 80px;
+    bottom: 50px;
+  }
+  #m-container{
+    width: 350px;
+    overflow: scroll;
   }
   header{
-    width: 100px;
+    width: 350px;
+  }
+  footer{
+    height: 50px;
+  }
+  #Resume-download{
+    width: 155px;
+  }
+  #icon-download{
+    margin-left: 0;
+  }
+  #content{
+    flex-direction: column;
+  }
+  #user{
+    flex-direction: column;
+    margin-top: 0;
+    justify-content: center;
+  }
+  #col-left{
+    max-width: 100%;
+
   }
 }
