@@ -382,12 +382,46 @@ path:hover{
   }
 }
 @media screen and (max-width: 1440px) {
-
   #photo{
     width: 80px;
     height: 80px;
   }
   #col-left{
     padding: 25px;
+  }
+  .slide{
+    padding-top: 0;
+  }
+  .dots{
+    position:absolute;
+    margin-top: -20px;
+    z-index: 10;
+    margin-left: 38%;
+  }
+  .t-hidden{
+    display: none;
+  }
+}
+@media screen and (max-width: 1366px) {
+  #user-info{
+    width: 80%;
+  }
+  .tab-content{
+    height: 400px;
+  }
+  .dots{
+    bottom: 60px;
+  }
+  p{
+    font-size: 11pt;
+  }
+}
+@media screen and (max-width: 375px){
+  #binec{
+    width: 25vw;
+    bottom: 80px;
+  }
+  header{
+    width: 100px;
   }
 }
