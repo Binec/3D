@@ -9,9 +9,11 @@ body{
 }
 a{
   color: white;
+  text-decoration: none;
 }
 a:hover{
-  color: brown;
+  color: red;
+  text-decoration: none;
 }
 p{
   line-height: 1.25;
@@ -33,10 +35,15 @@ header{
   align-items: center;
   padding: 20px 0 20px 0;
   justify-content: space-between;
+  text-decoration: none;
 }
+header
 .d-flex-c{
   display: flex;
   flex-direction: column;
+}
+#logo{
+  text-decoration: none;
 }
 .d-flex-r{
   display: flex;
@@ -54,7 +61,7 @@ nav{
   margin-left: 20px;
 }
 h2{
-  color: red;
+  color: blue;
   font-size: 14pt;
 }
 li{
@@ -90,6 +97,10 @@ li{
 .contact{
   text-align: right;
   justify-content: right;
+}
+#b-contact:hover{
+  color: black;
+  background-color: yellow;
 }
 #top-right{
   text-align: right;
@@ -163,7 +174,7 @@ input{
   width:90%;
 }
 input:focus{
-  border: 3px solid  red ;
+  border: 4px solid  yellow ;
 }
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -175,8 +186,8 @@ input[type=number] { -moz-appearance:textfield; }
 input::placeholder{
   color: white;
 }
-input::placeholder:hover{
-  color: red;
+input::placeholder:focus{
+  color: yellow;
 }
 #enviar{ 
   width: 20%;
@@ -184,7 +195,8 @@ input::placeholder:hover{
   padding-left: 0;
 }
 #enviar:hover{
-  background-color: blue;
+  background-color: yellow;
+  color: black;
 }
 footer{
   display: flex;
@@ -212,7 +224,7 @@ footer{
   margin-left: 20px;
 }
 path:hover{
-  fill: blue;
+  fill: red;
 }
 #galeria{
   margin: 0 auto;
@@ -361,8 +373,13 @@ path:hover{
   max-width: 250px;
   max-height: 250px;
 }
-
+@media screen and (max-width: 1600px) {
+  #m-container{
+    height: 110vh;
+  }
+}
 @media screen and (max-width: 1440px) {
+
   #photo{
     width: 80px;
     height: 80px;
