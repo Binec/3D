@@ -531,8 +531,13 @@ path:hover{
     height: 100%;
   }
   .dots{
-    margin-left: 30%;
+    margin-left: 10%;
     bottom: 10px;
+  }
+  .dot{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
   }
   #form-inputs{
     flex-direction: column;
