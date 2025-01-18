@@ -8,18 +8,16 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
-  
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
-
-  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
 </head>
 <body>
   <div id="m-container">
     <header class="d-flex-r">
-      <a href=""><h1 id="logo" style="text-decoration: none;">Binec</h1></a>
+      <!--<a href=""><h1 id="logo" style="text-decoration: none;">Binec</h1>--><model-viewer  alt="Es la hora del binec" autorotate src="assets/binec-time2.gltf" ar environment-image="" poster="" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
       <nav id="menu" class="d-flex-r">
         <a href="assets/Resume-DavidFerrusca-CV(1).pdf" download><button id="Resume-download" class="d-flex-r" >
           <img id="i-download" src="assets/material-symbols-light_download.svg" alt="">
@@ -197,15 +195,15 @@
           <div class="slider">
             <div class="slides">
               <div class="slide">
-                <h2>Modelado Binec</h2>
+                <h2>¿Qué hora es?</h2>
                 <div class="slide-content">
 
                   <div id="gltf-container">
-                    
+                    <model-viewer alt="Es la hora del binec" src="assets/binec-time2.gltf" ar environment-image="" poster="" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
                   </div>
 
                 <!--<div class="image"><img src="https://via.placeholder.com/150" alt="Image A"></div>-->
-                  <div class="text">This is the description for Slide A.</div>
+                  <div class="text">Modelo dedicado al tiempo</div>
                 </div>
               </div>
               <div class="slide">
