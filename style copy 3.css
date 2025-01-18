@@ -473,7 +473,6 @@ path:hover{
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    text-align: ;
   }
   #bottom-left{
     display: flex;
@@ -490,7 +489,7 @@ path:hover{
   #col-left{
     max-width: 100%;
     margin-top: 60px;
-    max-height: 2500px;
+    max-height: 2600px;
   }
   .text-location-mobile{
     font-size: 9pt;
