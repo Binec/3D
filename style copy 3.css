@@ -59,6 +59,10 @@ nav{
 }
 #language{
   margin-left: 20px;
+  text-decoration: underline;
+}
+#language:hover{
+  color: red;
 }
 h2{
   color: blue;
