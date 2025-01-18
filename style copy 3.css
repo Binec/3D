@@ -428,6 +428,9 @@ path:hover{
   header{
     width: 350px;
   }
+  #language{
+    margin-right: 10px;
+  }
   footer{
     height: 50px;
   }
@@ -444,9 +447,100 @@ path:hover{
     flex-direction: column;
     margin-top: 0;
     justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: -80px;
+  }
+  #photo{
+    width: 120px;
+    height: 120px;
+  }
+  #u-top{
+    flex-direction: column;
+  }
+  #u-bottom{
+    flex-direction: column;
+  }
+  #user-info{
+    width: 95%;
+  }
+  #top-right{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: ;
+  }
+  #bottom-left{
+    display: flex;
+    flex-direction: row;
+    font-size: 8pt;
+  }
+ .text-mobile {
+  padding-top: 3px;
+    font-size: 9pt;
+  }
+  #u-bottom{
+    margin-top: 10px;
   }
   #col-left{
     max-width: 100%;
-
+    margin-top: 60px;
+    max-height: 2500px;
+  }
+  .text-location-mobile{
+    font-size: 9pt;
+  }
+  .mty{
+    margin-left: 15px;
+  }
+  #bottom-right{
+    margin-top: 20px;
+  }
+  #b-contact{
+    width: 250px;
+  }
+  .m-l{
+    margin-right: 0;
+  }
+  #col-right{
+    margin-top: 25px;
+    max-width: 100%;
+    margin-left: 0;
+    max-height: 1200px;
+  }
+  .tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide{
+    padding: 0;
+  }
+  .slide-content{
+    flex-direction: column;
+  }
+  .slide-content .image{
+    width: 100%;
+  }
+  .slide-content .text{
+    width: 100%;
+    padding: 5px;
+  }
+  .tab-content{
+    max-height: 530px;
+    height: 100%;
+  }
+  .dots{
+    margin-left: 30%;
+    bottom: 10px;
+  }
+  #form-inputs{
+    flex-direction: column;
+  }
+  input{
+    width: 95%;
+  }
+  #enviar{
+    width: 100%;
   }
 }
