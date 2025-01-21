@@ -16,7 +16,7 @@
 <body>
   <div id="m-container">
     <header class="d-flex-r">
-      <model-viewer  alt="Es la hora del binec" autorotate src="assets/binec-time2.gltf" ar environment-image="" poster="" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
+      <model-viewer id="binectime" alt="Es la hora del binec" autorotate src="assets/binec-time2.gltf" ar environment-image="" poster="" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
       <nav id="menu" class="d-flex-r">
         <a href="assets/ResumeDaviFerrusca.pdf" download><button id="Resume-download" class="d-flex-r" >
           <img id="i-download" style="margin-left: 15px;" src="assets/material-symbols-light_download.svg" alt="">
@@ -336,6 +336,7 @@
   </div>
   <footer>
     <div id="footer-container" class="d-flex-r">
+      <model-viewer id="coin" loading="eager" size=".5 .5 .5" alt="Es la hora del binec" autoplay animation-name="Rotating" src="assets/binec-rotating.gltf" ar environment-image="" poster="" shadow-intensity="2" camera-controls touch-action="pan-y"></model-viewer>
       <p style="padding-top: 5px; margin-right: 30px;">©Binec 2025</p>
       <div>
         <a href="https://soundcloud.com/david-ferrusca"><svg id="f-icon" width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
