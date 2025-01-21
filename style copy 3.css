@@ -430,6 +430,10 @@ path:hover{
   }
 }
 @media screen and (max-width: 460px){
+  #coin{
+    width:40px;
+    height:20px;
+  }
   #binec{
     width: 25vw;
     bottom: 50px;
