@@ -1,0 +1,231 @@
+{
+  "asset": {
+    "generator": "Khronos glTF Blender I/O v1.0.5",
+    "version": "2.0"
+  },
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Scene",
+      "nodes": [
+        0,
+        1,
+        2
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "name": "Light",
+      "rotation": [
+        0.16907575726509094,
+        0.7558803558349609,
+        -0.27217137813568115,
+        0.570947527885437
+      ],
+      "translation": [
+        4.076245307922363,
+        5.903861999511719,
+        -1.0054539442062378
+      ]
+    },
+    {
+      "name": "Camera",
+      "rotation": [
+        0.483536034822464,
+        0.33687159419059753,
+        -0.20870360732078552,
+        0.7804827094078064
+      ],
+      "translation": [
+        7.358891487121582,
+        4.958309173583984,
+        6.925790786743164
+      ]
+    },
+    {
+      "mesh": 0,
+      "name": "Cylinder",
+      "rotation": [
+        0,
+        0,
+        -0.7071067690849304,
+        0.7071067690849304
+      ],
+      "scale": [
+        0.7275584936141968,
+        0.09961974620819092,
+        1
+      ],
+      "translation": [
+        0.0517275333404541,
+        0.48927104473114014,
+        0.29673218727111816
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "Material.001",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "Material.002",
+      "pbrMetallicRoughness": {}
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Cylinder",
+      "primitives": [
+        {
+          "attributes": {
+            "POSITION": 0,
+            "NORMAL": 1,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0
+        },
+        {
+          "attributes": {
+            "POSITION": 4,
+            "NORMAL": 5,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1
+        }
+      ]
+    }
+  ],
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 21424,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 21424,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 21424,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5123,
+      "count": 32736,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 4,
+      "componentType": 5126,
+      "count": 200,
+      "max": [
+        0.9191428422927856,
+        0.49019697308540344,
+        0.9216185808181763
+      ],
+      "min": [
+        -0.9262722134590149,
+        -0.4212599992752075,
+        -0.9191427826881409
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 5,
+      "componentType": 5126,
+      "count": 200,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 6,
+      "componentType": 5126,
+      "count": 200,
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 7,
+      "componentType": 5123,
+      "count": 588,
+      "type": "SCALAR"
+    }
+  ],
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 257088,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 257088,
+      "byteOffset": 257088
+    },
+    {
+      "buffer": 0,
+      "byteLength": 171392,
+      "byteOffset": 514176
+    },
+    {
+      "buffer": 0,
+      "byteLength": 65472,
+      "byteOffset": 685568
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2400,
+      "byteOffset": 751040
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2400,
+      "byteOffset": 753440
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1600,
+      "byteOffset": 755840
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1176,
+      "byteOffset": 757440
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "invitationnewmaterial2020_data.bin",
+      "byteLength": 758616
+    }
+  ]
+}
