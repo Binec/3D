@@ -6,6 +6,18 @@ body{
   background-color: black;
   font-family: sans-serif;
   color: white;
+  background-image: url(assets/20250203_123830.jpg);
+  background-repeat: none;
+  background-size: 100vw 148vh;
+}
+#bgim{
+  background-color: black;
+  opacity: 50%;
+  height: 148vh;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+
 }
 a{
   color: white;
