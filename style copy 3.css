@@ -443,8 +443,9 @@ path:hover{
 }
 @media screen and (max-width: 460px){
   body{
-    background-color: black;
-    background-image: none;
+    background-image: url(assets/20250203_123830.jpg);
+    background-repeat: none;
+    background-size: 100vw 100vh;
   }
   #coin{
     width:40px;
