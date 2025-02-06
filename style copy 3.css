@@ -442,6 +442,10 @@ path:hover{
   }
 }
 @media screen and (max-width: 460px){
+  body{
+    background-color: black;
+    background-image: none;
+  }
   #coin{
     width:40px;
     height:20px;
