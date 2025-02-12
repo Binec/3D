@@ -6,9 +6,9 @@ body{
   background-color: black;
   font-family: sans-serif;
   color: white;
-  background-image: url(assets/20250203_123830.jpg);
+  /*background-image: url(assets/20250203_123830.jpg);
   background-repeat: none;
-  background-size: 100vw 148vh;
+  background-size: 100vw 148vh;*/
 }
 #bgim{
   background-color: black;
@@ -443,9 +443,10 @@ path:hover{
 }
 @media screen and (max-width: 460px){
   body{
-    background-image: url(assets/20250203_123830.jpg);
+   /* background-image: url(assets/20250203_123830.jpg);
     background-repeat: none;
     background-size: 100vw 140vh;
+    position: fixed;*/
   }
   #coin{
     width:40px;
