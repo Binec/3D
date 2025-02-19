@@ -11,10 +11,9 @@ body{
   background-size: 100vw 148vh;*/
 }
 #bgim{
-  background-image: url(assets/20250203_123830.jpg);
-  background-repeat: none;
+  background-color: black;
   opacity: 50%;
-  height: 200%;
+  height: 100vh;
   width: 100%;
   position: absolute;
   z-index: -10;
