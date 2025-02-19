@@ -115,9 +115,13 @@ li{
   text-align: right;
   justify-content: right;
 }
+#b-contact{
+  background-color: yellow;
+  color: black;
+}
 #b-contact:hover{
   color: black;
-  background-color: yellow;
+  background-color: rgb(114, 114, 0);
 }
 #top-right{
   text-align: right;
@@ -212,9 +216,11 @@ input::placeholder:focus{
   width: 20%;
   height: 85px;
   padding-left: 0;
+  color: black;
+  background-color: yellow;
 }
 #enviar:hover{
-  background-color: yellow;
+  background-color: rgb(104, 104, 1);
   color: black;
 }
 footer{
